@@ -68,6 +68,7 @@ select {
 
 footer {
   font-size: 0.8rem;
+  line-height: 1.5;
   font-family: monospace;
   text-align: center;
   color: #454647;
@@ -78,10 +79,20 @@ footer a {
   text-decoration: none;
 }
 @media (max-width: 576px) {
+  h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+  }
+  .city {
+    padding: 10px 0;
+  }
   .time {
-    font-size: 28px;
+    font-size: 22px;
   }
   .time small {
-    font-size: 16px;
+    font-size: 12px;
+  }
+  .date {
+    font-size: 12px;
   }
 }
