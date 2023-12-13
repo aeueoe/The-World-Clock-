@@ -6,21 +6,23 @@ function updateTime() {
     let BerlinTimeElement = BerlinElement.querySelector(".time");
     let BerlinTime = moment().tz("Europe/Berlin");
 
-    BerlinDateElement.innerHTML = BerlinTime.format("MMMM	Do YYYY");
+    BerlinDateElement.innerHTML = BerlinTime.format("MMMM Do YYYY");
     BerlinTimeElement.innerHTML = BerlinTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Rome
-  let romeElement = document.querySelector("#rome");
-  if (romeElement) {
-    let romeDateElement = romeElement.querySelector(".date");
-    let romeTimeElement = romeElement.querySelector(".time");
-    let romeTime = moment().tz("Europe/Rome");
+  // Vancouver
+  let vancouverElement = document.querySelector("#vancouver");
+  if (vancouverElement) {
+    let vancouverDateElement = vancouverElement.querySelector(".date");
+    let vancouverTimeElement = vancouverElement.querySelector(".time");
+    let vancouverTime = moment().tz("America/Vancouver");
 
-    romeDateElement.innerHTML = romeTime.format("MMMM	Do YYYY");
-    romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+    vancouverDateElement.innerHTML = vancouverTime.format("MMMM Do YYYY");
+    vancouverTimeElement.innerHTML = vancouverTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
